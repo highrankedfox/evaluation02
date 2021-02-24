@@ -1,0 +1,68 @@
+body {
+    background-image: url(Images/background_galaxy.jpg);
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: auto;
+}
+
+button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: rgb(82, 82, 206);
+    background: none;
+    border: none;
+}
+button:hover {
+    font-weight: 400;
+}
+button:focus {
+    outline: none;
+}
+
+ion-row {
+    height: 60%;
+    text-align: center;
+}
+
+.gamebox {
+    background-color: white;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 30%;
+    box-shadow: 3px 4px 13px -6px rgba(0,0,0,0.9);
+    -webkit-box-shadow: 3px 4px 13px -6px rgba(0,0,0,0.9);
+    -moz-box-shadow: 3px 4px 13px -6px rgba(0,0,0,0.9);
+}
+@media screen and (max-width: 640px) {
+    .gamebox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+
+.button_new {
+    text-align: center;
+    height: 10%; 
+}
+
+.buttons {
+    text-align: center;
+}
+
+.starting_dice {
+    margin-top: 20px;
+}
