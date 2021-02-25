@@ -63,6 +63,7 @@ ion-row {
     text-align: center;
 }
 
-.starting_dice {
+#dice {
+    margin: auto;
     margin-top: 20px;
 }

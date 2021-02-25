@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
@@ -21,39 +22,40 @@
         <ion-row>
             <ion-col class="player_row" size="12" size-lg="4">
               <ion-row>
-                <ion-col size="12">
-                  Player 1<br>0
+                <ion-col size="12" id="player1">
+                  <span id="name0">Player 2</span><br><div id="round_score0">0</div>
                 </ion-col>
               </ion-row>
               <ion-row>
                 <ion-col size="12">
-                  Current<br>0
+                  Current<br><div id="current0">0</div>
                 </ion-col>
               </ion-row>
             </ion-col>
             <ion-col size="12" size-lg="4">
               <ion-row>
                 <ion-col size="12">
-                    <img src="Images/dice6.png" alt="Starting Dice" class="starting_dice">
+                    <img src="Images/dice6.png" alt="Starting Dice" id="dice">
                 </ion-col>
               </ion-row>
               <ion-row class="buttons">
                 <ion-col size="12">
-                  <button><ion-icon name="refresh-outline"></ion-icon>Roll dice</button>
+                  <button class="button_roll"><ion-icon name="refresh-outline"></ion-icon>Roll dice</button>
                   <br>
-                  <button><ion-icon name="save-outline"></ion-icon>Hold</button>
+                  <button class="button_hold"><ion-icon name="save-outline"></ion-icon>Hold</button>
                 </ion-col>
               </ion-row>
             </ion-col>
             <ion-col size="12" size-lg="4">
                 <ion-row>
-                  <ion-col size="12">
-                    Player 2<br>0
+                  <ion-col size="12" id="player2">
+                    <span id="name1">Player 2</span><br><div id="round_score1">0</div>
                   </ion-col>  
                 </ion-row>
                 <ion-row>
                   <ion-col class="current" size="12">
-                    Current<br>0
+                    Current<br><div id="current1">0</div>
+                  </ion-col>
                   </ion-col>
                 </ion-row>
               </ion-col>
